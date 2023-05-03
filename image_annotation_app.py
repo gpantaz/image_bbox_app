@@ -341,7 +341,7 @@ def main(args: argparse.Namespace) -> None:
                 label="Next image",
             )
             jump_image_button = gr.Button(
-                "Go To Image",
+                "Go to Image",
                 label="Go to image",
             )
         with gr.Row():
