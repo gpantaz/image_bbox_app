@@ -196,7 +196,7 @@ class ImageVisualizer:
     def on_jump_image_slider(
         self, image_index: int
     ) -> tuple[str, str, ImageAnnotation]:
-        """Go to a image provided by its index."""
+        """Go to an image provided by its index."""
         image_name = os.path.basename(self.images[image_index])
         image_annotation: ImageAnnotation = {image_name: []}
         if os.path.exists(self.output_annotation_json):
@@ -213,7 +213,7 @@ class ImageVisualizer:
     def on_jump_image_textbox(
         self, image_name: str
     ) -> tuple[int, str, ImageAnnotation]:
-        """Go to a image."""
+        """Go to an image provided by its name."""
         image_index = self.images.index(
             os.path.join(self.input_image_directory, image_name)
         )
